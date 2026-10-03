@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#f4f3ed">
+	<title>Utilidades rápidas</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="style.js" defer></script>
+</head>
+<body>
+	<main class="tool">
+		<header class="topbar">
+			<a class="wordmark" href="#inicio" aria-label="Utilidades rápidas, inicio">
+				<span class="mark" aria-hidden="true">+</span>
+				<span>UTILIDADES<span class="wordmark-light"> / 01</span></span>
+			</a>
+			<span class="topbar-note">CALCULADORA PERSONAL</span>
+		</header>
+
+		<section class="workspace" id="inicio" aria-labelledby="page-title">
+			<div class="intro">
+				<p class="eyebrow"><span class="status-dot"></span> TRES HERRAMIENTAS, UN SOLO LUGAR</p>
+				<h1 id="page-title">Haz las cuentas.<br><span>Y sigue con tu día.</span></h1>
+				<p class="intro-copy">Elige una utilidad para empezar.</p>
+			</div>
+
+			<section class="calculator" aria-label="Calculadora">
+				<div class="calculator-head">
+					<div>
+						<p class="section-label">MENÚ PRINCIPAL</p>
+						<h2>¿Qué necesitas calcular?</h2>
+					</div>
+					<span class="step-count" aria-hidden="true">01 <i>/ 03</i></span>
+				</div>
+
+				<fieldset class="utility-options" id="utility-options">
+					<legend class="field-label">Elige una utilidad</legend>
+					<div class="utility-grid">
+						<label class="utility-choice">
+							<input type="radio" name="utility" value="1">
+							<span class="utility-card">
+								<img src="https://images.unsplash.com/photo-1499346030926-9a72daac6c63?auto=format&fit=crop&w=480&q=80" alt="" loading="lazy">
+								<span class="utility-card-footer"><span class="utility-card-title">Celsius a °F</span><span class="utility-card-index">01</span></span>
+							</span>
+						</label>
+						<label class="utility-choice">
+							<input type="radio" name="utility" value="2">
+							<span class="utility-card">
+								<img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=480&q=80" alt="" loading="lazy">
+								<span class="utility-card-footer"><span class="utility-card-title">Precio con IVA</span><span class="utility-card-index">02</span></span>
+							</span>
+						</label>
+						<label class="utility-choice">
+							<input type="radio" name="utility" value="3">
+							<span class="utility-card">
+								<img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=480&q=80" alt="" loading="lazy">
+								<span class="utility-card-footer"><span class="utility-card-title">Nota a letra</span><span class="utility-card-index">03</span></span>
+							</span>
+						</label>
+					</div>
+				</fieldset>
+
+				<form id="calculator-form" novalidate hidden>
+					<div id="fields" class="fields"></div>
+					<button class="calculate-button" type="submit">
+						Calcular <span aria-hidden="true">↗</span>
+					</button>
+				</form>
+
+				<div id="message" class="message" role="status" aria-live="polite" hidden></div>
+				<p class="footnote"><span aria-hidden="true">↳</span> Resultados al instante, sin complicaciones.</p>
+			</section>
+
+			<footer class="page-footer">
+				<span>CONVERSIONES · IMPUESTOS · CALIFICACIONES</span>
+				<span>HECHO PARA RESOLVER</span>
+			</footer>
+		</section>
+	</main>
+</body>
+</html>
